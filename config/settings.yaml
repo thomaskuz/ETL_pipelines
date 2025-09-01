@@ -5,11 +5,11 @@ api:
     latitude: 50.88
     longitude: 3.67
     hourly: "temperature_2m"
-    timezone: "Europe/Brussels"
+    timezone: "Europe/Berlin"
 
 output:
   csv_path: "data/out/weather.csv"
-  mode: "overwrite"      # later you can switch to "append"
+  mode: "w"      # later you can switch to "append"
 
 runtime:
   request_timeout_s: 15
