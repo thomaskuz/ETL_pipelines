@@ -1,0 +1,16 @@
+api:
+  base_url: "https://api.open-meteo.com"
+  endpoint: "/v1/forecast"
+  query_params:
+    latitude: 50.88
+    longitude: 3.67
+    hourly: "temperature_2m"
+    timezone: "Europe/Brussels"
+
+output:
+  csv_path: "data/out/weather.csv"
+  mode: "overwrite"      # later you can switch to "append"
+
+runtime:
+  request_timeout_s: 15
+  max_retries: 3
